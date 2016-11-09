@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/colorItemBack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:text="Falta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ckb_asistencia_falta"
+        android:layout_weight=".3" />
+
+    <TextView
+        android:text="Nombre alumno"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_asistencia_nombre"
+        android:layout_weight=".7" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/lbl_asistencia_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

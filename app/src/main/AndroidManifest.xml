@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lacf.luisadrian.examen2parcialfinal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Principal"
+            android:label="Inicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AgregarAlumno"
+            android:label="Agregar alumno"
+            android:parentActivityName=".Principal" />
+        <activity
+            android:name=".ListaAsistencia"
+            android:label="Explorar grupos"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Principal" />
+        <activity
+            android:name=".TomarAsistencia"
+            android:label="Tomar asistencia"
+            android:parentActivityName=".Principal" />
+        <activity
+            android:name=".DetallesAlumno"
+            android:label="Detalles del alumno"
+            android:parentActivityName=".ListaAsistencia"/>
+    </application>
+
+</manifest>
